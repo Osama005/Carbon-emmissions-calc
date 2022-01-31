@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin: 0;
+    height: 2000px;
+    font-family: system-ui;
+}
+
+.ss {
+    transition: 30ms;
+
+}
+
+.container{
+     width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+    
+/*start nav*/
+nav{
+    height:0;
+    position: relative;
+    z-index: 2;
+}
+
+nav .logo{
+    flex: 50%;
+    margin: 20px;
+}
+
+nav .list{
+    flex: 50%;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+nav .list ul{
+    list-style: none;
+}
+
+nav .list ul li{
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+
+nav .list ul li::after{
+    content: " ";
+    position: absolute;
+    top: 22px;
+    left: 1px;
+    height: 3px;
+    width: 0px;
+    background-color: blue;
+    transition: .3s;
+}
+
+nav .list ul li:hover:after{
+    width: 45px;
+}
+/*end nav*/
+
+/*start header*/
+.header {
+    height: 700px;
+    background-image: url(../images/smoke-258786_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.header .info{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    margin-left: -337px;
+}
+
+.header .info h2{
+    font-size: 45px;
+    margin: 0;
+}
+
+.header .info p{
+    font-size: 22px;
+    
+}
+  a{
+           text-decoration:none;
+           color:white;
+       }
+/* end header*/
+
+/* start instructions*/
+.how-it-works {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.container .list {
+    font-size: 17px;
+    margin-top: 5px;
+    
+}
+
+.how-it-works .container .img {
+    flex: 50%;
+    text-align: right;
+}
+/* end instructions*/
+
+/*start Calculations*/
+.calculate h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+        input{
+            border-width:0px 0px 1px 0px;
+            border-bottom-color:blue;
+            margin-left:8px;
+            text-align:center;
+        }
+    
+        .input-1{
+            margin-left:110px;
+        }
+        .input-2{
+            margin-left:60px;
+        }
+       
+         .input-4{
+            margin-left:4px;
+        }
+        .calculate{
+            background-color:black;
+            color:white;
+        }
+        .check{
+            margin-left:42%;
+            width:30%;
+            height:40px;
+            background-color:red;
+            border-radius:30px;
+            border:none;
+        }
+
+
+/*end Calculations*/
